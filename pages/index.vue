@@ -1,79 +1,108 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center">
-        <NuxtLogo />
-        <VuetifyLogo />
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+    <div>
+        <section class="bg-half-170 bg-gray d-table w-100">
+            <div class="container">
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="title-heading text-center">
+                            <h1 class="heading title-dark mb-3 font-weight-bold">En Uygun Sigorta Teklifleri</h1>
+                            <p class="para-desc mx-auto">Tüm sigorta firmalarından gelen teklifleri anında görün, karşılaştırın ve en uygun olanı sadece 2 dakika da poliçeleştirin!</p>
+                            <div class="row mt-4 pt-2">
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/kasko-sigortasi" class="text-dark">
+                                        <div class="card-body">
+                                            <div class="icon rounded-circle shadow-md d-inline-block">
+                                               <!-- <img src="~@/assets/image/car-insurance.svg" class="avatar avatar-md-sm" alt=""> -->
+                                            </div>
+                                                <div class="content mt-7">
+                                                <span class="mb-0">
+                                                    Kasko
+                                                </span>
+                                            </div>
+                                        </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/trafik-sigortasi" class="text-dark">
+                                            <div class="card-body">
+                                                <div class="icon rounded-circle shadow-md d-inline-block">
+                                                  <!-- <img src="~@/assets/image/two-cars-collide.svg" class="avatar avatar-md-sm" alt=""> -->
+                                                </div>
+                                                <div class="content mt-7">
+                                                    <span class="mb-0">
+                                                        Zorunlu Trafik
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/tamamlayici-saglik-sigortasi" class="text-dark">
+                                        <div class="card-body">
+                                            <div class="icon rounded-circle shadow-md d-inline-block">
+                                               <!--  <img src="~@/assets/image/healthcare.svg" class="avatar avatar-md-sm" alt=""> -->
+                                            </div>
+                                            <div class="content mt-4" style="line-height:18px;">
+                                                <span class="mb-0">Tamamlayıcı Sağlık </span>
+                                            </div>
+                                        </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/ozel-saglik-sigortasi" class="text-dark">
+                                        <div class="card-body">
+                                            <div class="icon rounded-circle shadow-md d-inline-block">
+                                            <!-- <img src="~@/assets/image/health-care.svg" class="avatar avatar-md-sm" alt=""> -->
+                                            </div>
+                                                <div class="content mt-7">
+                                                 <span class="mb-0">Özel Sağlık</span>
+                                            </div>
+                                        </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/dask-sigortasi" class="text-dark">
+                                        <div class="card-body">
+                                            <div class="icon rounded-circle shadow-md d-inline-block">
+                                            <!-- <img src="~@/assets/image/earthquake.svg" class="avatar avatar-md-sm" alt=""> -->
+                                            </div>
+                                                <div class="content mt-7">
+                                               <span class="mb-0"> DASK</span>
+                                            </div>
+                                        </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                    <div class="card explore-feature border-0 rounded text-center bg-white header-insurancies-item">
+                                        <router-link to="/konut-sigortasi" class="text-dark">
+                                        <div class="card-body">
+                                            <div class="icon rounded-circle shadow-md d-inline-block">
+                                             <!-- <img src="~@/assets/image/house-protection.svg" class="avatar avatar-md-sm" alt=""> -->
+                                            </div>
+                                                <div class="content mt-7">
+                                                <span class="mb-0">Konut</span>
+                                            </div>
+                                        </div>
+                                        </router-link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script>
